@@ -1,0 +1,101 @@
+.appcard-container {
+  .ant-card-body {
+    padding: 0px;
+    height: 226px;
+    border: 0px;
+    background: white;
+    border-radius: 0px 0px 8px 8px;
+  }
+  .ant-card-bordered {
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    background: #f4f4f4;
+  }
+  .ant-card:hover {
+    border-radius: 8px !important;
+  }
+  .card-title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    margin-bottom: 9px;
+    height: 23px;
+  }
+  .card-subtitle-one {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    color: #404040;
+    height: 22px;
+  }
+  .card-subtitle-two {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    color: #404040;
+    height: 22px;
+  }
+  .card-subtitle-price {
+    margin-top: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .euro-price {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 32px;
+      letter-spacing: -0.015em;
+      color: #f94144;
+      margin-right: 16px;
+    }
+    .kuna-price {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: -0.015em;
+      color: #7f7f7f;
+    }
+  }
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 74px;
+    padding-left: 24px;
+    padding-right: 24px;
+    .card-footer-left {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.05em;
+      color: #7f7f7f;
+    }
+    .card-footer-right {
+      background: rgba(249, 65, 68, 0.1);
+      border-radius: 6.4199px;
+      width: 46px;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

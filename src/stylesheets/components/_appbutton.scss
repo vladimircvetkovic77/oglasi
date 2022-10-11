@@ -1,0 +1,22 @@
+.appbutton-container {
+  .simple-button-blackheart {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Poppins";
+    width: 136px;
+    padding: 0px;
+    margin-right: 36px;
+    @include displayItems(flex, center, center, row);
+  }
+  .simple-button-user {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Poppins";
+    width: 87px;
+    padding: 0px;
+    margin-right: 36px;
+    @include displayItems(flex, center, center, row);
+  }
+}

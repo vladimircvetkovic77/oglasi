@@ -1,0 +1,114 @@
+.properties-container {
+  width: 100%;
+  @include fromMediumDesktop {
+    width: $medium-desktop-width;
+  }
+  margin: 0 auto;
+  @include displayItems(flex, center, center, column);
+  .properties__breadcrumbs--container {
+    margin-top: 16px;
+    background: white;
+    width: 100%;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    height: 50px;
+  }
+  .properties__filter--container {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    margin-top: 40px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    @include displayItems(flex, flex-start, flex-start, column);
+    @include fromMediumDesktop {
+      @include displayItems(flex, flex-start, flex-start, row);
+      width: $medium-desktop-width;
+      padding: 30px;
+      margin-top: 63px;
+      height: 187px;
+    }
+    .properties__filter--radio {
+      width: 245px;
+      margin-bottom: 20px;
+      @include fromMediumDesktop {
+        width: 125px;
+      }
+    }
+    .properties__filter--fields {
+      width: 100%;
+      @include fromMediumDesktop {
+        width: 100%;
+        width: 982px;
+        margin-left: 37px;
+        @include displayItems(flex, flex-start, space-between, row);
+        // allow wrapping
+        flex-wrap: wrap;
+      }
+      .properties__filter--item {
+        width: 100%;
+        margin-bottom: 20px;
+        @include fromMediumDesktop {
+          width: 315px;
+        }
+        .two-items-holder {
+          @include displayItems(flex, center, space-between, row);
+          width: 100%;
+          background: #f4f4f4;
+          @include fromMediumDesktop {
+            width: 100%;
+          }
+          .vertical-divider {
+            width: 1px;
+            height: 32px;
+            border: 1px solid #c4c4c4;
+            margin-left: 14px;
+            margin-right: 14px;
+          }
+        }
+      }
+    }
+  }
+  .properties__cards--holder {
+    @include displayItems(flex, center, center, row);
+    @include fromMediumDesktop {
+      @include displayItems(flex, center, space-between, row);
+    }
+    max-width: 1204px;
+    flex-wrap: wrap;
+    margin-top: 147px;
+    .card-holder {
+      margin-bottom: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
+      @include fromMediumDesktop {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    }
+  }
+  .additional-search {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    margin-top: 30px;
+    color: #000000;
+    cursor: pointer;
+  }
+  .see-more {
+    @include displayItems(flex, center, flex-start, row);
+    width: 100%;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    margin-top: 12px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,31 @@
+.appradiobuttongroup-container {
+  .ant-radio-wrapper-checked > span {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+  }
+  .ant-radio-wrapper {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    color: #828282;
+    transition: all 0.3s ease-in-out;
+  }
+  span.ant-radio + * {
+    padding-left: 13px;
+  }
+  .simple-two-radios {
+    @include displayItems(flex, flex-start, flex-start, row);
+    @include fromMediumDesktop {
+      @include displayItems(flex, flex-start, center, column);
+    }
+  }
+}
