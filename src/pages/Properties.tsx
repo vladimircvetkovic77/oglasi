@@ -255,6 +255,7 @@ export default function Properties() {
                             ? property.price
                             : property.price / config.EX_RATE_KUNA
                         }
+                        date={property.postedTime}
                         priceKuna={
                           property.priceCurrency === "EUR"
                             ? property.price * config.EX_RATE_KUNA
@@ -289,6 +290,7 @@ export default function Properties() {
                             ? property.price
                             : property.price / 7.35
                         }
+                        date={property.postedTime}
                         priceKuna={
                           property.priceCurrency === "EUR"
                             ? property.price * 7.35

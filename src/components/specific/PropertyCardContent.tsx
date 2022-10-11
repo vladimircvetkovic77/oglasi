@@ -2,6 +2,7 @@ import React from "react";
 import { ReactComponent as EmptyHeart } from "../../assets/icons/emptyheart.svg";
 import { ReactComponent as FullHeart } from "../../assets/icons/fullredheart.svg";
 import formatCurrency, { Currency } from "../../utilities/formatCurrency";
+import { formatDate } from "../../utilities/formatDate";
 
 interface PropertyCardContentProps {
   title: string;
@@ -11,6 +12,7 @@ interface PropertyCardContentProps {
   priceKuna: number;
   isFavourite: boolean;
   handleFavourite: (property: any) => void;
+  date: string;
 }
 const PropertyCardContent = ({
   title,
@@ -20,6 +22,7 @@ const PropertyCardContent = ({
   priceKuna,
   isFavourite,
   handleFavourite,
+  date,
 }: PropertyCardContentProps) => {
   return (
     <>
@@ -58,7 +61,7 @@ const PropertyCardContent = ({
         ></div>
       </div>
       <div className="card-footer">
-        <div className="card-footer-left">24.05.2020.</div>
+        <div className="card-footer-left">{ formatDate(date, "DD.MM.YYYY.")}</div>
         <div onClick={handleFavourite} className="card-footer-right">
           {isFavourite ? <FullHeart /> : <EmptyHeart />}
         </div>
