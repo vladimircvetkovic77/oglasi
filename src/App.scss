@@ -1,3 +1,29 @@
-// .ant-btn {
-//   border-radius: 15px;
-// }
+// Imported Fonts: Poppins
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+// Variables and Mixins
+@import "./stylesheets/abstracts/variables";
+@import "./stylesheets/abstracts/mixins";
+
+// Common and Specific components
+@import "./stylesheets/components/appbutton";
+@import "./stylesheets/components/appcard";
+@import "./stylesheets/components/appradiobuttongroup";
+@import "./stylesheets/components/appselect";
+@import "./stylesheets/components/layout";
+@import "./stylesheets/components/appinputwithsearch";
+@import "./stylesheets/components/appsimpleinput";
+@import "./stylesheets/components/appbreadcrumb";
+@import "./stylesheets/pages/properties";
+
+body {
+  // no select
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                        supported by Chrome and Opera */
+  background: #f4f4f4;
+}
