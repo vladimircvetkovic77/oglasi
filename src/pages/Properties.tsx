@@ -122,7 +122,6 @@ export default function Properties() {
         );
       }
     });
-
     setFilteredProperties(filterProperties);
   }, [
     location,
@@ -133,6 +132,25 @@ export default function Properties() {
     roomsFrom,
     roomsTo,
   ]);
+
+  const handleIsFavoriteFiltered = useCallback(
+      (id: string) => {
+            // go through filtered properties and find the one with the same id
+            const properties = [...filteredPropeties]
+            const updatedProperties = properties.map((property) => {
+                  if (property.id === id) {
+                        return {
+                              ...property,
+                              isFavorite: !property.isFavorite,
+                        };
+                  }
+                  return property;
+            });
+            // update the state
+            setFilteredProperties(updatedProperties);
+      },
+      [filteredPropeties]
+      );
 
   const handleChangePrice = useCallback((e: any) => {
     if (isNaN(e.target.value)) {
@@ -297,7 +315,7 @@ export default function Properties() {
                             : property.price
                         }
                         handleFavourite={() =>
-                          dispatch(setIsFavorite(property.id))
+                              handleIsFavoriteFiltered(property.id)
                         }
                         isFavourite={property.isFavorite}
                       />
